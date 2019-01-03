@@ -79,17 +79,26 @@
     clear: both;
 }
 
+.body-pictures{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.body-pictures li{
+    padding-right: 30px;
+}
+
 .pictures {
     float: left;
     width: 255px;
     height:322px;
-    padding-right: 30px;
     padding-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     
 }
 
-.pictures:nth-child(4n+1){
+.pictures:nth-child(4n){
     padding-right: 0;
 }
 
@@ -146,7 +155,7 @@
     padding-bottom: 15px;
 }
 
-.article:nth-child(3n+1){
+.article:nth-child(3n){
     padding-right: 0;
 }
 .article img{

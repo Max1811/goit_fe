@@ -1,0 +1,86 @@
+.container{
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.divs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.container::after{
+    clear: both;
+}
+
+.b1 {
+    position: absolute;
+    top: 150px;
+    background-color: #6edd24;
+}
+
+.b2 {
+    position: absolute;
+    top: 300px;
+    background-color: #2724dd;
+}
+
+.b3 {
+    position: absolute;
+    left: 150px;
+    background-color: #8a24dd;
+}
+
+.b4 {
+    position: absolute;
+    left: 300px;
+    background-color: #c1dd24;
+}
+
+.b5 {
+    position: absolute;
+    top: 150px;
+    left:150px;
+    background-color: #56adb9;
+}
+
+.b6 {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    background-color: #dd2424;
+}
+
+.b7 {
+    position: absolute;
+    top: 300px;
+    left:150px;
+    background-color: #d8ff2c;
+}
+
+.b8 {
+    position: absolute;
+    top: 300px;
+    left:300px;
+    background-color: #18860e;
+}
+
+.b9{
+    position: absolute;
+    background-color: #240e86;
+}

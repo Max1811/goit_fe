@@ -9,19 +9,23 @@
     float: left;
 }
 
-
+.header{
+    
+}
 
 .menu {
     padding: 0;
     text-align: right;
     clear: both;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .container{
     padding: 0 15px;
     max-width: 1140px;
     margin: 0 auto;
+    
 }
 
 .menu li {

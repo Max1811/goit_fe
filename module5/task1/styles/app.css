@@ -1,0 +1,25 @@
+.container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.photo{
+    
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.grad{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to bottom,rgb(6, 137, 37) 0%, transparent 80%);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}

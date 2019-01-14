@@ -171,6 +171,7 @@ float: left;
 }
 
 .describtion{
+    font-weight: normal;
     font-size: 18px;
     color: #555252;
     font-family: 'Open Sans', sans-serif;

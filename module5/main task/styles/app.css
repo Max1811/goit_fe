@@ -1,12 +1,22 @@
 .header {
     padding: 15px 0;
-    margin-bottom: 10px;
 }
 
-.logo::after {
-    content: '';
-    clear: both;
+.logo {
+    display: inline-block;
+    max-width: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #555252;
+    font-family: 'Roboto', sans-serif;
 }
+
+.logo::first-letter {
+    font-weight: 600;
+    color: #1abc9c;
+}
+
 
 .menu {
     padding: 0;
@@ -38,8 +48,15 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 15px;
-    padding-right: 35px;
     color: #333;
+}
+
+.menu li {
+    margin-right: 35px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
 }
 
 .menu li a:hover{
@@ -51,13 +68,22 @@
 }
 
 .slider {
-    width: 99%;
-    height: 600px;
-    position: relative;
+    min-height: 600px;
     margin: 0 auto;
+    background-image: url("images/1.jpg");
+    background-repeat: no-repeat;
+    
+}
+
+.slide-title {
+    width: 1110px;
+    min-height: 600px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .slider-control {
+    padding: 30px;
     position: absolute;
     width: 105px;
     height: 105px;
@@ -68,14 +94,19 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+    background-position: center, center;
 }
 
 .slider-control-prev {
-    left: 15%;
+    background-image: url("images/left_arrow.png");
+    background-repeat: no-repeat;
+    left: 0;
 }
 
 .slider-control-next {
-    right: 15%;
+    background-image: url("images/right_arrow.png");
+    background-repeat: no-repeat;
+    right: 0;
 }
 
 .slides {
@@ -84,9 +115,6 @@
     padding: 0;
 }
 
-.slides-item {
-    position: relative;
-}
 
 .slide-image {
     width: 100%;
@@ -95,27 +123,23 @@
 }
 
 .slide-describtion {
+    padding-top: 225px;
+    margin: 20px 0;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 55px;
-    position: absolute;
+    font-size: 59px;
     color: #fff;
-    bottom: 51%;
-    transform: translate(-50%, 50%);
-    left: 50%;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
    
 }
 
 .slide-text {
+    padding-left: 180px;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 22px;
-    position: absolute;
+    font-size: 25px;
     color: #fff;
-    bottom: 41%;
-    transform: translate(-50%, 50%);
-    left: 42%;
     font-family: 'Roboto', sans-serif;
    
 }

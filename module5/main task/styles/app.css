@@ -1,5 +1,6 @@
 .header {
     padding: 15px 0;
+    margin-bottom: 15px;
 }
 
 .logo {
@@ -29,13 +30,13 @@
 .clearfix::after {
     content: '';
     clear: both;
+    display: table;
  }
 
 .container{
     padding: 0 15px;
     max-width: 1140px;
     margin: 0 auto;
-    
 }
 
 .menu li {
@@ -124,14 +125,13 @@
 
 .slide-describtion {
     padding-top: 225px;
-    margin: 20px 0;
+    margin: 0 0 25px 0;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 59px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-   
 }
 
 .slide-text {
@@ -141,7 +141,7 @@
     font-size: 25px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-   
+   margin: 0;
 }
 
 .button-img {
@@ -157,24 +157,21 @@
     transform: rotate(180deg);
 }
 
-.page-section {
-    min-height: 500px;
-    
+.background-section-color {
+    width: 100%;
+    background-color: #e9f0fd;
 }
 
 .page-section .title {
     text-align: center;
     font-size: 45px;
     color: #515151;
-    margin: 70px;
+    padding: 70px;
+    margin: 0;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
 
-.title {
-    margin: 0;
-    margin-bottom: 30px;
-}
 
 .page-section .title::after {
     content: "";
@@ -195,7 +192,7 @@
     padding: 0;
 }
 
-.body-pictures li{
+.pictures{
     margin-right: 30px;
 }
 
@@ -203,7 +200,7 @@
     float: left;
     width: 255px;
     height:322px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     
@@ -263,13 +260,13 @@
 }
 
 .container-hover-card {
+    padding: 75px 30px;
     position: absolute;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
     left: 10px;
     bottom: 80px;
     top:10px;
     right: 10px;
-    opacity: 0.5;
     display: none;
 }
 
@@ -278,77 +275,81 @@
 }
 
 .actions {
-    position: absolute;
-    width: 190px;
-    height: 50px;
+    list-style: none;
     margin: 0;
     padding: 0;
-    top: 80px;
-    left: 35px;
     display: none;
-
 }
 
-.actions div {
-    position: relative;
-    display: inline-block;
-    border: 2px solid white;
+.action-hover {
+    display: block;
+    float:left;
+    margin-right: 6px ;
+    margin-bottom: 6px;
     width: 50px;
     height: 50px;
-    margin-right: 5px;
+    border: 2px solid white;
 }
 
-.action3 {
+.action4 {
+    position: relative;
+    width: 170px;
+    background-color: #323232;
+}
+
+.action-hover:nth-child(3) {
     margin-right: 0;
+}
+
+.action-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.add-to-card {
+    position: absolute;
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: right;
+    left: 55px;
+    bottom: 0;
+}
+
+.action-hover:last-child {
+    margin-bottom: 0px;
+}
+
+.link1, .link2 {
+    padding: 13px;
+}
+
+.link3 {
+    padding: 12px;
+}
+
+.link4 {
+    padding:10px;
 }
 
 .pictures:hover .actions{
     display: block;
 }
 
-.action-img1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.action1 {
-    border: 0px solid white;
-}
-
-.action-hover:hover {
+.change-color:hover {
+    opacity: 1;
     border: 2px solid #1abc9c;
     background-color: #1abc9c;
 }
 
-.action4 {
-    background-color: #323232;
-    border: 2px solid white;
-    top: 140px;
-    width: 176px;
-}
-
-.action4 img {
-    left: 28px;
-}
-
-.action-text {
-    color: white;
-    text-transform: uppercase;
-    text-align: right;
-    padding-right: 20px;
-}
-
-
-
-.page-info {
-    width: 100%;
+.footer {
     height: 90px;
     background-color: #323232;
 }
 
 .page-info p {
+    margin: 0;
     text-align: center;
     color: white;
     font-size: 16px;
@@ -358,5 +359,6 @@
 }
 
 .blue-text {
+    text-decoration: none;
     color: #1abc9c;
 }

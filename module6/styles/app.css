@@ -73,6 +73,11 @@
     margin-bottom: 55px;
 }
 
+.title-wrapper2 {
+    margin: 0;
+    margin-bottom: 90px;
+}
+
 .title-up {
     margin: 0;
     padding: 0;
@@ -142,11 +147,12 @@
 .name-of {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    color:333333;
+    color: #333333;
     margin: 0;
     padding: 0;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .description-text {

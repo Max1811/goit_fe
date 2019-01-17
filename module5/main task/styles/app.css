@@ -157,17 +157,19 @@
     transform: rotate(180deg);
 }
 
-.background-section-color {
+.page-section {
     width: 100%;
     background-color: #e9f0fd;
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
 
 .page-section .title {
     text-align: center;
     font-size: 45px;
     color: #515151;
-    padding: 70px;
     margin: 0;
+    margin-bottom: 70px;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
@@ -192,15 +194,11 @@
     padding: 0;
 }
 
-.pictures{
-    margin-right: 30px;
-}
-
 .pictures {
     float: left;
+    margin-right: 30px;
     width: 255px;
     height:322px;
-    margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     
@@ -264,7 +262,6 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     left: 10px;
-    bottom: 80px;
     top:10px;
     right: 10px;
     display: none;
@@ -288,13 +285,18 @@
     margin-bottom: 6px;
     width: 50px;
     height: 50px;
-    border: 2px solid white;
+}
+
+.action-hover:nth-child(n-3) {
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .action4 {
     position: relative;
     width: 170px;
     background-color: #323232;
+    border: 2px solid white;
 }
 
 .action-hover:nth-child(3) {
@@ -302,8 +304,11 @@
 }
 
 .action-link {
-    display: inline-block;
+    display: block;
     text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
 }
 
 .add-to-card {
@@ -321,16 +326,29 @@
     margin-bottom: 0px;
 }
 
-.link1, .link2 {
-    padding: 13px;
+.link1 {
+    background-image: url("images/b1.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+.link2 {
+    background-image: url("images/b2.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
 .link3 {
-    padding: 12px;
+    background-image: url("images/b3.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
 .link4 {
-    padding:10px;
+    background-image: url("images/b4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
 }
 
 .pictures:hover .actions{
@@ -338,9 +356,13 @@
 }
 
 .change-color:hover {
-    opacity: 1;
     border: 2px solid #1abc9c;
     background-color: #1abc9c;
+}
+
+.link4:hover {
+    background-color: transparent;
+
 }
 
 .footer {
@@ -361,4 +383,11 @@
 .blue-text {
     text-decoration: none;
     color: #1abc9c;
+    display: inline-block;
+}
+
+.slide-info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

@@ -23,16 +23,18 @@
 
 .menu {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
+    min-width: 500px;
     
 }
 
 .menu-list {
     text-transform: uppercase;
     font-size: 14px;
-    padding: 30px;
 }
 
 .menu-list:last-child {
@@ -46,7 +48,6 @@
 .menu-list a::after {
     content: "";
     display: block;
-    width: 50px;
     border-bottom: 3px solid transparent;
     margin: 0 auto;
     margin-top: 12px;
@@ -77,6 +78,10 @@
 .main {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.info-section {
+    margin-bottom: 70px;
 }
 
 .title-wrapper{
@@ -121,7 +126,7 @@
 
 .wrapper {
     display: flex;
-    align-items: center;
+    
     max-width: 1200px;
     margin: 0 auto;
     
@@ -130,7 +135,6 @@
 .info-boxes {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content:space-between;
     list-style: none;
     margin: 0;
@@ -140,9 +144,9 @@
 .box {
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    width: 370px;
-    margin-bottom: 100px;
+    width: 380px;
+    height: 130px;
+    margin-bottom: 40px;
 }
 
 .box:nth-child(n+4) {
@@ -192,6 +196,7 @@
 
 .personal-information {
     display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -201,14 +206,6 @@
     margin-bottom: 80px;
 }
 
-.card {
-    margin-right: 30px;
-    
-}
-
-.card:last-child {
-    margin-right: 0;
-}
 
 .picture {
     margin-bottom: 30px;

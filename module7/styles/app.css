@@ -268,6 +268,13 @@ input[type=text]:invalid {
     outline-color:rgb(43, 255, 0);
 }
 
+textarea:invalid {
+    outline-color:rgb(255, 0, 0);
+}
+
+textarea:valid {
+    outline-color:rgb(43, 255, 0);
+}
 input[type=submit]:hover {
     background-color: #fed136;
 }

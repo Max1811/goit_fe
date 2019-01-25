@@ -58,6 +58,8 @@
 
 .menu {
     display: flex;
+    min-width: 480px;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -72,13 +74,7 @@
     text-transform: uppercase;
 }
 
-.menu-list {
-    margin-right: 40px;
-}
 
-.menu-list:last-child {
-    margin-right: 0;
-}
 
 .menu-list a:hover {
     color: #fed136;

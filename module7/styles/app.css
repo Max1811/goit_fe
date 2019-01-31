@@ -50,6 +50,7 @@
 }
 
 .logo {
+    display: block;
     font-family: "Courgette";
     text-decoration: none;
     color: #fed136;
@@ -66,6 +67,7 @@
 }
 
 .menu-list a {
+    display: block;
     transition: color 200ms linear;
     text-decoration: none;
     color: #222222;
@@ -80,10 +82,13 @@
     color: #fed136;
 }
 
-.services {
+.wrapper {
     max-width: 940px;
     margin: 0 auto;
-    margin-bottom: 100px;
+}
+
+.services {
+    padding-bottom: 120px;
 }
 
 .title {
@@ -104,8 +109,9 @@
     color: #777777;
     text-align: center;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     font-family: "Crimson";
+    
 }
 
 .card-list {
@@ -120,7 +126,6 @@
 .inform-card {
     position: relative;
     width: 290px;
-    height: 270px;
 }
 
 .inform-card img {
@@ -130,9 +135,15 @@
     transform: translateX(-50%);
 }
 
-.card-describtion {
-    position: absolute;
-    bottom: 0;
+.inform-card::before {
+    content: '';
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-image: url("images/symbol1.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .name-of-card {
@@ -142,6 +153,7 @@
     text-align: center;
     font-size: 18px;
     color: #222;
+    margin-bottom: 20px;
 }
 
 .card-info {
@@ -149,22 +161,22 @@
     padding: 0;
     text-align: center;
     text-indent: 5px;
-    padding: 20px 0;
     font-family: "Roboto-Slab";
     color: #9b9b9b;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 .form {
     width: 100%;
-    height: 680px;
+    padding-top: 110px;
     background-image: url("images/map.png");
     background-repeat: no-repeat;
     background-position: center, center;
 }
 
 .form .title {
-    padding-top: 110px;
+    
     color: #ffffff;
     font-size: 30px;
     font-family: "Montserrat-B";
@@ -173,20 +185,21 @@
 .users-data {
     max-width: 940px;
     margin: 0 auto;
+    padding-bottom: 115px;
 }
 
 .action-wrapper {
     display: flex;
-    flex-direction: row;
-    margin: 0 -15px;
+    justify-content: space-between;
 }
 
 .action-wrapper ul {
+    padding: 0;
     margin: 0;
-    padding: 0 15px;
     list-style: none;
-    flex: 1 1 50%;
+    width: 455px;
 }
+
 
 .input-list li  {
     margin-right: 30px;
@@ -202,8 +215,8 @@
     border: none;
 }
 
-.action textarea {
-    width: 100%;
+.textarea {
+    width: 455px;
     height: 210px;
     border: 0;
     padding: 15px;
@@ -239,8 +252,9 @@
     text-align: center;
 }
 
-input[type=submit] {
+button[type=submit] {
     font-family: "Montserrat-B";
+    display: block;
     border: 0;
     padding: 25px 50px;
     color: #fff;
@@ -250,6 +264,7 @@ input[type=submit] {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 13px;
+    margin: 0 auto;
 }
 
 
@@ -271,6 +286,6 @@ textarea:invalid {
 textarea:valid {
     outline-color:rgb(43, 255, 0);
 }
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #fed136;
 }

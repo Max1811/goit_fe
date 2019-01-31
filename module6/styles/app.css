@@ -76,8 +76,7 @@
 }
 
 .main {
-    max-width: 1200px;
-    margin: 0 auto;
+   
 }
 
 .info-section {
@@ -197,9 +196,15 @@
 .personal-information {
     display: flex;
     justify-content: space-between;
+    
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+
+.people-cards .wrapper {
+    display: block;
 }
 
 .people-cards {
@@ -261,10 +266,13 @@
 }
 
 .action {
-    width: 60px;
-    height: 60px;
     border-right:1px solid #f9bd87;
     background-color: #fce38a;
+}
+
+.actions-links {
+    width: 60px;
+    height: 60px;
 }
 
 .action:last-child {
@@ -275,20 +283,32 @@
     background-color: #95e1d3;
 }
 
-.action1 img {
-    padding: 16px 23px;
+.action1 {
+    display: block;
+    background-image: url("images/share1.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
-.action2 img {
-    padding: 18px;
+.action2  {
+    display: block;
+    background-image: url("images/share2.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
-.action3 img {
-    padding: 17px 19px;
+.action3  {
+    display: block;
+    background-image: url("images/share3.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
-.action4 img {
-    padding: 18px;
+.action4 {
+    display: block;
+    background-image: url("images/share4.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
 .card {
@@ -331,21 +351,16 @@
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
     height: 60px;
-    margin: 0px auto;
 }
 
-.main::after {
-    content: "";
-    display: block;
-    width: 1200px;
-    border-bottom: 1px solid #e5e5e5;
-    margin: 0 auto;
+.footer .wrapper {
+    border-top: 1px solid #e5e5e5;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
+
 
 .page-info {
     margin: 0;

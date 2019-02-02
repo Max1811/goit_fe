@@ -131,6 +131,9 @@
     
 }
 
+.info-section .wrapper {
+    display: block;
+}
 .info-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -143,9 +146,40 @@
 .box {
     display: flex;
     align-items: center;
-    width: 380px;
-    height: 130px;
-    margin-bottom: 40px;
+    flex: 0 0 380px;
+    margin-bottom: 60px;
+}
+
+.box::before {
+    content:'';
+    width: 90px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.box:nth-child(0n+1)::before{
+    background-image: url('images/1s.png');
+}
+
+.box:nth-child(0n+2)::before{
+    background-image: url('images/2s.png');
+}
+
+.box:nth-child(0n+3)::before{
+    background-image: url('images/3s.png');
+}
+
+.box:nth-child(0n+4)::before{
+    background-image: url('images/4s.png');
+}
+
+.box:nth-child(0n+5)::before{
+    background-image: url('images/5s.png');
+}
+
+.box:nth-child(0n+6)::before{
+    background-image: url('images/6s.png');
 }
 
 .box:nth-child(n+4) {
@@ -153,7 +187,7 @@
 }
 
 .box-description {
-    padding: 20px 0;
+    padding: 20px 0 20px 10px;
 }
 
 .name-of {
@@ -208,7 +242,7 @@
 }
 
 .people-cards {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 

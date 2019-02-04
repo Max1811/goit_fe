@@ -14,14 +14,16 @@
     font-style: normal;
 }
 
-.header {
-    width: 100%;
+.masthead-wrapper {
     height: 700px;
+    background-position: center;
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center, center;
     margin-bottom: 75px;
+}
+
+.header {
     text-align: center;
 }
 
@@ -114,6 +116,7 @@
 
 .info-section {
     text-align: center;
+    margin-bottom: 55px;
 }
 
 .info-section .title {
@@ -197,7 +200,6 @@
 
 .info-section .find-partner {
     padding: 0.8rem 4.15rem;
-    margin-bottom: 55px;
 }
 
 .info-section .container {

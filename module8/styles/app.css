@@ -20,7 +20,7 @@
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 75px;
+    
 }
 
 .header {
@@ -88,7 +88,7 @@
     text-align: center;
     margin: 0;
     font-size: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .title-describtion {
@@ -97,26 +97,29 @@
     text-align: center;
     font-size: 18px;
     padding: 0 50px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-family: "Roboto-L";
 }
 
 .find-partner {
+    display: block;
     color: white;
     text-decoration: none;
     background-color: #ff4e50;
     border: none;
     border-radius: 20px;
-    padding: 0.8rem 2.5rem;
+    padding: 0.8rem 0;
     font-size: 15px;
     font-family: "Montserrat-B";
     margin: 0 auto;
     border: 2px solid transparent;
+    width: 285px;
 }
 
 .info-section {
     text-align: center;
     margin-bottom: 55px;
+    padding-top: 75px;
 }
 
 .info-section .title {
@@ -179,7 +182,7 @@
     color: #333;
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .card-title-describtion {
@@ -188,7 +191,7 @@
     padding: 0;
     font-size: 15px;
     color: #c2c2c2;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-family: "Roboto-L";
 }
 
@@ -196,10 +199,6 @@
     background-color: #fff;
     color: #ff4e50;
     border: 2px solid #ff4e50;
-}
-
-.info-section .find-partner {
-    padding: 0.8rem 4.15rem;
 }
 
 .info-section .container {
@@ -219,7 +218,7 @@
 
     .header .title {
         font-size: 50px;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .cards-list {
@@ -230,7 +229,7 @@
     }
 
     .info-section .title {
-        padding-bottom: 40px;  
+        margin-bottom: 40px;  
     }
 
     .title-describtion {
@@ -238,11 +237,7 @@
     }
 
     .find-partner {
-        padding: 0.8rem 1rem;
-    }
-
-    .info-section .find-partner {
-        padding: 0.8rem 2.65rem;
+        width: 235px;
     }
 }
 

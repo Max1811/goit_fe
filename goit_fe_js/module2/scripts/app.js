@@ -8,8 +8,7 @@ let total = 0;
 
 while(true)
 {
-    input = prompt('');
-    console.log(input);
+    input = prompt('Введите число = ');
     if(!input) 
         break;
     else

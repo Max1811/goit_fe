@@ -10,10 +10,13 @@ const notepad = {
   notes: [],
   
   getNotes() {
-    for (const obj of this.notes) {
-      console.log(obj);
+    return this.notes;
+  },
+
+  printNotes(notes) {
+    for (const obj of notes) {
+      console.log(`${obj.id} ${obj.title} ${obj.body} ${obj.priority}`)
     }
-    return '';
   },
 
   findNoteById(id) {
@@ -26,6 +29,7 @@ const notepad = {
 
   saveNote(note) {
     this.notes.push(note);
+    return note;
   },
 
   deleteNote(id) {
@@ -53,23 +57,22 @@ const notepad = {
   },
 
   updateNotePriority(id, priority) {
-    for(const obj of this.notes){
-      if(obj.id === id){
-        obj.priority = priority;
-        break;
-      }
-    }
+    let obj = notepad.findNoteById(id);
+    obj.priority = priority;
   },
 
   filterNotesByQuery(query) {
     const temp = [];
+    query = query.toLowerCase();
+
     for(const obj of this.notes){
-      if(obj.body.includes(query) || obj.title.includes(query)){
+      if(obj.body.toLowerCase().includes(query) || obj.title.toLowerCase().includes(query)){
         temp.push(obj);
       }
     }
     return temp;
   },
+  
   filterNotesByPriority(priority) {
     const temp = [];
     for(const obj of this.notes){
@@ -115,31 +118,28 @@ notepad.saveNote({
 
 
 console.log('Все текущие заметки: ' );
-console.log(notepad.getNotes());
+let notes = notepad.getNotes();
+notepad.printNotes(notes);
 
 notepad.updateNotePriority('id-4', Priority.NORMAL);
 
-console.log(
-  'Заметки после обновления приоритета для id-4: '
-
-);
-console.log(notepad.getNotes());
+console.log('Заметки после обновления приоритета для id-4: ');
+notes = notepad.getNotes();
+notepad.printNotes(notes);
 
 
 notepad.updateNotePriority('id-3', Priority.LOW);
 
-console.log(
-  'Заметки после обновления приоритета для id-3: ',
-  notepad.getNotes(),
-);
+console.log('Заметки после обновления приоритета для id-3: ');
+notes = notepad.getNotes();
+notepad.printNotes(notes);
 
 /*
  * Решил отфильтровать заметки по слову html
  */
-console.log(
-  'Отфильтровали заметки по ключевому слову "html": ',
-  notepad.filterNotesByQuery('html'),
-);
+
+console.log('Отфильтровали заметки по ключевому слову "html": ');
+console.log(notepad.filterNotesByQuery('html'));
 
 /*
  * Решил отфильтровать заметки по слову javascript
@@ -165,12 +165,14 @@ notepad.updateNoteContent('id-3', {
 });
 
 console.log(
-  'Заметки после обновления контента заметки с id-3: ',
-  notepad.getNotes(),
-);
+  'Заметки после обновления контента заметки с id-3: ');
+  notes = notepad.getNotes();
+  notepad.printNotes(notes);
 
 /*
  * Повторил HTML и CSS, удаляю запись c id-2
  */
-notepad.deleteNote('id-2');
-console.log('Заметки после удаления с id -2: ', notepad.getNotes());
+notepad.deleteNote('id-3');
+console.log('Заметки после удаления с id -2: ');
+notes = notepad.getNotes();
+notepad.printNotes(notes);

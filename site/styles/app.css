@@ -45,8 +45,6 @@ body .container1 {
     background-color: rgb(139, 138, 138);
 }
 
-
-
 .name-title {
     margin: 0;
     padding: 0;
@@ -92,7 +90,7 @@ body .container1 {
 
 .menu-sub1 > .menu-item1 {
     border:1px solid #333;
-    width: 75%;
+    width: 700px ;
     height: 320px;
     background-color: rgb(109, 104, 104);
     text-align: center;

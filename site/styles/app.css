@@ -51,7 +51,7 @@ body .container1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    padding: 15px 0;
+    padding: 13px 0;
     font-size: 55px;
     font-family: "Montserrat-B";
 }
@@ -66,7 +66,7 @@ body .container1 {
 
 .wrapper-article{
     width: 100%;
-    height: 400px;
+    height: 500px;
     border: 1px solid black;
 }
 
@@ -111,7 +111,6 @@ body .container1 {
 
 .menu-item1:hover .menu-link1 {
     color: white;
-    border-color: #0000cc;
     text-decoration: none;
 }
 

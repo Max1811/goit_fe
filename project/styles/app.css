@@ -1,0 +1,76 @@
+main {
+    margin-top: 56px;
+    
+}
+
+body {
+    background-color: #eee;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    z-index: 999;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.left-sidebar {
+    position: fixed;
+    z-index: 1000;
+    top: 56px;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    transition: left .2s ease-in-out;
+}
+
+.opened .left-sidebar {
+    left: 0;
+}
+
+.opened .sidebar-overlay {
+    display: block;
+}
+
+.left-sidebar .sidebar {
+    max-width: 300px;
+    height: 100%;
+}
+
+.app-img {
+    max-width: 100%;
+}
+
+/* carousel override */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none !important;
+}
+
+.carousel-indicators li {
+    background-color: none !important;
+}
+
+.carousel-indicators .active {
+    background-color: none !important;
+}
+
+.carousel .fas {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .9);
+}
+
+.text-center {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.btn-search {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}

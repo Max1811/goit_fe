@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+    }
+
+    .visually-hidden:not(:focus):not(:active),
+    input[type="checkbox"].visually-hidden,
+    input[type="radio"].visually-hidden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+body {
+    color: #626262;
+    font-size: 14pt;
+    font-family: 'Playfair Display';
+}
+
+.app-header {
+    padding: 0 1rem;
+}
+
+.app-header .menu {
+    list-style: none;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.app-header .menu li {
+    display: inline-block;
+    padding: 1rem;
+    min-width: 150px;
+}
+
+.app-header .menu li a:hover {
+    color: #03a9f4;
+}
+
+.app-header .menu li a:focus {
+    color: #42e719;
+}
+
+.app-header .menu li a {
+    display: block;
+    text-decoration: none;
+    color: #626262;
+    text-transform: uppercase;
+    transition: color 200ms ease-in-out;
+}
+
+.container {
+    max-width: 905px;
+    margin: 0 auto;
+    padding: 0;
+}
+.posts li{
+    margin-bottom: 130px;
+}
+.posts li:nth-child(2n) {
+    margin-right: 0;
+    }
+
+.posts li:nth-last-child(-n + 2) {
+     margin-bottom: 0;
+    }
+
+.posts {
+    list-style: none;
+    padding: 0;
+    margin:0px;
+    font-size: 0;
+}
+
+.article {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+}
+
+
+
+article .photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+.tags {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.copy {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.load-more {
+    padding: .75rem 2rem;
+    border: 1px solid #626262;
+    color: #626262;
+    background-color: #fff;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.load-more:hover, .load-more:focus {
+    color: #fff;
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+}
+
+.footer-controls {
+    display:block;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color:#626262;
+    width:165px;
+    height: 60px;
+    clear: both;
+}
+
+.mySection {
+    padding-bottom: 70px;
+}

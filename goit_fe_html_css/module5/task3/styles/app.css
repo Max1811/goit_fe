@@ -11,61 +11,61 @@ html, body {
     padding: 20px;
 }
 
-.menu {
+.menu1 {
     list-style: none;
     margin: 0;
     padding: 0;
     display: inline-block;
 }
 
-.menu-item {
+.menu-item1 {
     padding: 5px;
 }
 
-.sub{
+.sub1{
     float: left;
 }
 
-.sub::after{
+.sub1::after{
     clear: both;
 }
 
-.menu-sub > .menu-item {
+.menu-sub1 > .menu-item1 {
     border:1px solid #333;
-    width: 150px;
+    width: 300px;
     text-align: center;
     padding: 10px;
 }
 
-.menu-link {
-    width: 150px;
-    padding: 10px;
+.menu-link1 {
+    width: 100px;
+    height: 100px;
     border: 1px solid #333;
     display: block;
     transition: all ease 200ms;
     text-align: center;
 }
 
-.menu-item:hover .menu-link {
+.menu-item1:hover .menu-link1 {
     color: #0000cc;
     background: #fff;
     border-color: #0000cc;
 }
 
-.menu-item > .menu-sub {
+.menu-item1 > .menu-sub1 {
     display: none;
 }
 
-.menu-item:hover > .menu-sub {
+.menu-item1:hover > .menu-sub1 {
     display: block;
 }
 
-.menu-sub {
+.menu-sub1 {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu-link{
+.menu-link1{
     text-decoration: none;
 }

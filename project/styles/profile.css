@@ -51,7 +51,7 @@
     padding: 0;
     margin: 0;
     color: #333;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .review-wrapper {
@@ -71,7 +71,7 @@
     color: #007bff;
     text-decoration: underline;
     padding-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .timezone {
@@ -91,7 +91,7 @@
 }
 
 .map-count {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .profile-button {

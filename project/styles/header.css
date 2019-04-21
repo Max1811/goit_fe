@@ -50,37 +50,3 @@ body {
     max-width: 300px;
     height: 100%;
 }
-
-.app-img {
-    max-width: 100%;
-}
-
-/* carousel override */
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    background-image: none !important;
-}
-
-.carousel-indicators li {
-    background-color: none !important;
-}
-
-.carousel-indicators .active {
-    background-color: none !important;
-}
-
-.carousel .fas {
-    font-size: 1rem;
-    color: rgba(0, 0, 0, .9);
-}
-
-.text-center {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.btn-search {
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-}

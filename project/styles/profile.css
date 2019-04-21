@@ -1,0 +1,101 @@
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    background-color: #80bdff; 
+}
+
+.main {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.user-photo {
+    color: #007bff;
+    font-size: 115px;
+    padding: 0 24px;
+}
+
+.username {
+    font-size: 35px;
+    
+    color: #333;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.profession {
+    
+    color: #007bff;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    margin-bottom: 60px;
+}
+
+.wrapper-main-info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.location {
+    color: #999;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.review-stars {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.review-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.stars-count {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+    padding: 8px 10px;
+}
+
+.e-mail {
+    color: #007bff;
+    text-decoration: underline;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.timezone {
+    text-decoration: none;
+}
+
+.extra-possibilities
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.button1 {
+ margin-right: 30px;
+}
+
+.map-count {
+    margin-bottom: 15px;
+}
+
+.profile-button {
+    border: 4px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

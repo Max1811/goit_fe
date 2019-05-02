@@ -1,12 +1,21 @@
-main {
-    margin-top: 56px;
-    
-}
-
 body {
     background-color: #eee;
 }
 
+.navbar {
+    position: relative;
+}
+
+.name-of-application {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #80bdff;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
 .sidebar-overlay {
     position: fixed;
     z-index: 999;
@@ -55,7 +64,21 @@ body {
     max-width: 100%;
 }
 
-/* carousel override */
+.container-fluid-1 {
+    margin: 0;
+    padding: 0;
+    color:#333;
+}
+.container-fluid h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container-fluid p {
+    color: #333;
+    font-size: 20px;
+}
+    /* carousel override */
 .carousel-control-next-icon, .carousel-control-prev-icon {
     background-image: none !important;
 }
@@ -83,4 +106,18 @@ body {
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
+}
+
+.map-text {
+    text-align: center;
+    color:#333;
+    margin-top: 25px;
+}
+
+.fa-lock {
+    font-size: 17px;
+}
+
+.private-acc {
+    color: #0051ff;
 }

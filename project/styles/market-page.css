@@ -1,0 +1,138 @@
+.info-shop {
+    width: 100%;
+    height: 125px;
+    background-color: #80bdff;
+    color: #007bff;
+    font-family: 'Sumana', serif;
+    border-radius: 2px;
+}
+
+.info {
+    height: 50%;
+    width: 100%;
+    border: 1px solid #007bff;
+}
+
+.info:nth-child(1) {
+    border-bottom:none;
+}
+
+.dropdown-toggle {
+    padding: 16px 47px;
+    background-color: #80bdff;
+    border: 1px solid #007bff;
+    border-radius: 2px; 
+    color: #007bff !important;
+    font-family: 'Sumana', serif;
+    font-size: 20px;
+    outline: none;
+}
+
+.dropdown .dropdown-menu {
+    border-radius: 0;
+    width: 100%;
+    transform: translate3d(0px, 62px, 0px) !important; 
+}
+
+.logo-wrapper {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.description {
+    text-align: center;
+    font-size: 16px;
+}
+
+.info:nth-child(2) button h2{
+    padding: 10px 0;
+}
+
+.info:nth-child(2) button{
+    width: 100%;
+    background-color: #80bdff;
+    margin: 0;
+    padding:3px 0;
+    border: none;
+}
+
+.catalog {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #007bff;
+    border-top: none;
+    background-color: #80bdff;
+}
+
+.category {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    height: 62.5px;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.list-of-stuff {
+    opacity: 0;
+}
+
+.opened .list-of-stuff{
+    opacity: 1;
+}
+
+.card-wrapper {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #80bdff;
+    color:#007bff;
+}
+
+.btn1,.btn5,.btn6{
+    background-color: #49e263;
+    color:#0ab821;
+}
+
+.btn2,.btn3 {
+    background-color: #e65454;
+    color:#9e1515;
+}
+
+.btn4 {
+    background-color: #f0ff67;
+    color:#c0b623;
+}
+
+.category-name {
+    text-align: center;
+    font-size: 25px;
+    color: #007bff;
+    font-family: 'Merienda', serif;
+    margin-bottom: 0;
+}
+
+.dropdown-menu {
+    background-color: #80bdff;
+    border: 1px solid #007bff;
+}
+
+.dropdown-menu a {
+    color: #007bff;
+    
+}
+
+.cards {
+    margin-bottom: 20px;
+}

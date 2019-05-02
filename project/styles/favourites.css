@@ -1,0 +1,29 @@
+.downloading-title {
+    color: #007bff;
+    font-family: 'Merienda', serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 4%;
+}
+
+.downloading-title:nth-child(1) {
+    text-align: center;
+}
+
+.map {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Merienda', serif;
+    text-decoration: underline;
+    list-style: none;
+}
+
+.fa-check {
+    color: #3fe25a;
+}
+
+

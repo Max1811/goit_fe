@@ -1,12 +1,21 @@
-main {
-    margin-top: 56px;
-    
-}
-
 body {
     background-color: #eee;
 }
 
+.navbar {
+    position: relative;
+}
+
+.name-of-application {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #80bdff;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
 .sidebar-overlay {
     position: fixed;
     z-index: 999;
@@ -49,4 +58,66 @@ body {
 .left-sidebar .sidebar {
     max-width: 300px;
     height: 100%;
+}
+
+.app-img {
+    max-width: 100%;
+}
+
+.container-fluid-1 {
+    margin: 0;
+    padding: 0;
+    color:#333;
+}
+.container-fluid h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container-fluid p {
+    color: #333;
+    font-size: 20px;
+}
+    /* carousel override */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none !important;
+}
+
+.carousel-indicators li {
+    background-color: none !important;
+}
+
+.carousel-indicators .active {
+    background-color: none !important;
+}
+
+.carousel .fas {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .9);
+}
+
+.text-center {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.btn-search {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-text {
+    text-align: center;
+    color:#333;
+    margin-top: 25px;
+}
+
+.fa-lock {
+    font-size: 17px;
+}
+
+.private-acc {
+    color: #0051ff;
 }

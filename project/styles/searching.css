@@ -1,0 +1,73 @@
+.form-group input {
+width: 80%;
+height: 40px;
+float: left;
+margin: 0;
+}
+
+
+.search-button {
+    padding:7px 10px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 6px;
+    position: absolute;
+    background-color: #80bdff;
+}
+
+.map-container {
+    height: 550px;
+    background-image: url(../images/4-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.shop-points {
+    margin: 0;
+    padding: 0;
+    opacity: 0;  
+    transition: all 0.2s linear;
+}
+
+.point {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+   
+}
+
+.point:nth-child(1) {
+    left: 37%;
+    top: 53%;
+    
+}
+
+.point:nth-child(2) {
+    left: 53%;
+    top: 42%;
+    
+}
+
+.point:nth-child(3) {
+    left: 64%;
+    top: 32%;
+    
+}
+
+.point:nth-child(4) {
+    left: 50%;
+    top: 43%;
+    
+}
+
+.point:nth-child(5) {
+    left: 73%;
+    top: 47%;
+    
+}
+
+.displayed .shop-points {
+    opacity: 1;
+}

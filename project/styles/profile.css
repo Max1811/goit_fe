@@ -6,6 +6,8 @@
 
 }
 
+
+
 .main {
     padding-top: 25px;
     padding-left: 25px;
@@ -15,6 +17,17 @@
     color: #007bff;
     font-size: 107px;
     padding: 0 28px;
+}
+
+@media(max-width:350px){
+    .user-photo {
+        font-size: 95px;
+    }
+
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .username {

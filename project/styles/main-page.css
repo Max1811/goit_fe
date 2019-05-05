@@ -1,0 +1,28 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #007bff;
+    min-height: 100vh;
+}
+
+.name-page {position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper-img img {
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}

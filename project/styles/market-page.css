@@ -96,6 +96,12 @@
     justify-content: space-between;
 }
 
+.fa-star {
+    color: #f7ec5d;
+    font-size: 25px;
+    padding: 10px;
+    padding-bottom: 0;
+}
 .btn {
     background-color: #80bdff;
     color:#007bff;

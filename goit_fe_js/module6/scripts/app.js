@@ -82,6 +82,7 @@ class Notepad {
 
 }
 
+console.log(typeof Notepad);
 
 const initialNotes = [
   {

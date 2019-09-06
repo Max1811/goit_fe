@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  form {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  fieldset {
+    margin-bottom: 1rem;
+  }
+  
+label {
+  display: block;
+  padding: 10px;
+}
+
+label input[type=radio] {
+  margin-right: 1rem;
+}
